@@ -1,5 +1,5 @@
 # Descrição
-Nesta aplicação foi criada a tela de cadastro baseada na tela inicial, o cadastro precisa receber os dados abaixo: 
+Nesta aplicação foi criada a tela de cadastro baseada na tela inicial, o cadastro receber os dados abaixo: 
 
    Nome
    
@@ -26,6 +26,8 @@ O projeto foi desenvolvido usando as seguintes tecnologias:
 -   [useState](https://pt-br.reactjs.org/docs/hooks-state.html)
 -   [useEffect](https://pt-br.reactjs.org/docs/hooks-effect.html)
 -   [Axios](https://axios-http.com/ptbr/docs/intro)
+-   [JS-Cookie](https://github.com/js-cookie/js-cookie)
+-   [SweetAlert](https://sweetalert2.github.io/)
 
 
 
@@ -35,4 +37,7 @@ Clonar o repositório<br>
 Executar o comando npm install, depois npm start<br>
 Abrir no endereço http://localhost:3000<br><br>
 Hospedado em
-http://hernan-barrientos-helthyfood.surge.sh
+
+-   [Helthyfood](http://hernan-barrientos-helthyfood.surge.sh)
+
+

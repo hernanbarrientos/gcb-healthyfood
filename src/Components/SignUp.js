@@ -115,6 +115,7 @@ const SignUp = () => {
               value={form.address}
               placeholder={"Address"}
               readOnly
+              required
             />
             <InputForm
               name="number"
@@ -128,12 +129,14 @@ const SignUp = () => {
               value={form.district}
               placeholder={"District"}
               readOnly
+              required
             />
             <InputForm
               name="city"
               value={form.city}
               placeholder={"City"}
               readOnly
+              required
             />
           </>
         ) : null}
