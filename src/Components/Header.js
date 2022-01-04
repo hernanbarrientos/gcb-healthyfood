@@ -7,16 +7,16 @@ function Header() {
       <Subtitle>Healthy Food</Subtitle>
       <ContainerNav>
         <Button as="a" href="#">
-          HOME
-        </Button>
-        <Button as="a" href="#">
-          HEALTHY RECIPES
+        HEALTHY RECIPES
         </Button>
         <Button as="a" href="#">
           BLOG
         </Button>
         <Button as="a" href="#">
           JOIN
+        </Button>
+        <Button as="a" href="#">
+          REGISTER
         </Button>
       </ContainerNav>
     </Container>

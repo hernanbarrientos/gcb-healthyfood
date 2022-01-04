@@ -16,27 +16,40 @@ const SignUp = () => {
     city: "",
   });
 
+  const [error, setError] = useState();
+
   const onChange = (event) => {
     const { name, value } = event.target;
     setForm({ ...form, [name]: value });
+    setError(false);
   };
 
   useEffect(() => {
     const cep = form.zipCode.replace(/[^0-9]/g, "");
+    setForm({
+      ...form,
+      ["address"]: "",
+      ["district"]: "",
+      ["city"]: "",
+    });
     if (cep?.length !== 8) {
       return;
     } else {
       axios
         .get(`https://viacep.com.br/ws/${cep}/json/`)
         .then((res) => {
-          setForm({
-            ...form,
-            ["address"]: res.data.logradouro,
-            ["district"]: res.data.bairro,
-            ["city"]: res.data.localidade,
-          });
+          if(res.data.erro){
+            setError(true)         
+          } else {
+            setForm({
+              ...form,
+              ["address"]: res.data.logradouro,
+              ["district"]: res.data.bairro,
+              ["city"]: res.data.localidade,
+            });
+          }
         })
-        .catch((err) => console.log(err.response));
+        .catch((err) => setError({...err}));
     }
   }, [form.zipCode]);
 
@@ -48,13 +61,16 @@ const SignUp = () => {
     }
   }, []);
 
+
   const handleSignUp = (event) => {
     event.preventDefault();
+    
     new swal({
       title: "Very Good",
       text: "Successfully Registered!",
       icon: "success",
     });
+
     const formJSON = JSON.stringify(form);
     localStorage.setItem("form", formJSON);
     Cookies.set("form", formJSON);
@@ -92,7 +108,7 @@ const SignUp = () => {
           name="cpf"
           value={form.cpf}
           onChange={onChange}
-          placeholder={"CPF ___.___.___-__"}
+          placeholder={"CPF Only numbers"}
           required
           maxLength={11}
           pattern={"[0-9]{11}"}
@@ -108,7 +124,7 @@ const SignUp = () => {
           title={"Only Numbers - Your ZIP Code must contain 8 digits"}
         />
 
-        {zipCodeAuto ? (
+        {form.address ? (
           <>
             <InputForm
               name="address"
@@ -140,7 +156,7 @@ const SignUp = () => {
             />
           </>
         ) : null}
-
+        {error ? <p> Zip Code Invalid </p> : null}
         <Button>Submit</Button>
       </Form>
     </Container>
