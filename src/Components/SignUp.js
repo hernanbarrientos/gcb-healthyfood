@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Cookies from "js-cookie";
 import { Container, Form, InputForm, Button } from "./signUpStyles";
 
 const SignUp = () => {
@@ -39,9 +40,20 @@ const SignUp = () => {
   }, [form.zipCode]);
 
 
+  useEffect(() => {
+    const formString = localStorage.getItem("form") || Cookies.get("form");
+    if (formString) {
+      const formJson = JSON.parse(formString);
+      setForm(formJson);
+    }
+  }, []);
+
   const handleSignUp = (event) => {
     event.preventDefault();
-
+    const formJSON = JSON.stringify(form);
+    localStorage.setItem("form", formJSON);
+    Cookies.set("form", formJSON);
+    
     setForm({
       name: "",
       date: "",

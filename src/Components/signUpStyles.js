@@ -49,6 +49,7 @@ export const Button = styled.button`
   font-size: 1.3rem;
   font-weight: 500;
   margin: auto;
+  margin-top: 2%;
 
   &:hover {
     color: white;
