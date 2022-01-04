@@ -19,11 +19,38 @@ const SignUp = () => {
     setForm({ ...form, [name]: value });
   };
 
+  useEffect(() => {
+    const cep = form.zipCode.replace(/[^0-9]/g, "");
+    if (cep?.length !== 8) {
+      return;
+    } else {
+      axios
+        .get(`https://viacep.com.br/ws/${cep}/json/`)
+        .then((res) => {
+          setForm({
+            ...form,
+            ["address"]: res.data.logradouro,
+            ["district"]: res.data.bairro,
+            ["city"]: res.data.localidade,
+          });
+        })
+        .catch((err) => console.log(err.response));
+    }
+  }, [form.zipCode]);
+
+
   const handleSignUp = (event) => {
     event.preventDefault();
+
+    setForm({
+      name: "",
+      date: "",
+      cpf: "",
+      zipCode: "",
+    });
   };
 
-  
+
   return (
     <Container>
       <Form onSubmit={handleSignUp}>
