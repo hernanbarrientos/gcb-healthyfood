@@ -3,7 +3,6 @@ import Header from "../Components/Header";
 import SignUp from "../Components/SignUp";
 import { PageContainer, Subtitle, SignUpContainer } from "./styles";
 
-
 function Register() {
   return (
     <PageContainer>
@@ -13,7 +12,7 @@ function Register() {
         <SignUp />
       </SignUpContainer>
     </PageContainer>
-  )
+  );
 }
 
 export default Register;

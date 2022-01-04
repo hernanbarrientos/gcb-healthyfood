@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
 import { Container, Form, InputForm, Button } from "./signUpStyles";
+import swal from "sweetalert2";
 
 const SignUp = () => {
   const [form, setForm] = useState({
@@ -39,7 +40,6 @@ const SignUp = () => {
     }
   }, [form.zipCode]);
 
-
   useEffect(() => {
     const formString = localStorage.getItem("form") || Cookies.get("form");
     if (formString) {
@@ -50,10 +50,15 @@ const SignUp = () => {
 
   const handleSignUp = (event) => {
     event.preventDefault();
+    new swal({
+      title: "Very Good",
+      text: "Successfully Registered!",
+      icon: "success",
+    });
     const formJSON = JSON.stringify(form);
     localStorage.setItem("form", formJSON);
     Cookies.set("form", formJSON);
-    
+
     setForm({
       name: "",
       date: "",
@@ -62,6 +67,7 @@ const SignUp = () => {
     });
   };
 
+  const zipCodeAuto = form.zipCode.length == 8 ? true : false;
 
   return (
     <Container>
@@ -78,6 +84,7 @@ const SignUp = () => {
           value={form.date}
           onChange={onChange}
           placeholder={"Birth date MM/DD/YYYY"}
+          max="2011-12-31"
           type="date"
           required
         />
@@ -101,12 +108,11 @@ const SignUp = () => {
           title={"Only Numbers - Your ZIP Code must contain 8 digits"}
         />
 
-        {form.zipCode ? (
+        {zipCodeAuto ? (
           <>
             <InputForm
               name="address"
               value={form.address}
-              onChange={onChange}
               placeholder={"Address"}
               readOnly
             />
@@ -120,14 +126,12 @@ const SignUp = () => {
             <InputForm
               name="district"
               value={form.district}
-              onChange={onChange}
               placeholder={"District"}
               readOnly
             />
             <InputForm
               name="city"
               value={form.city}
-              onChange={onChange}
               placeholder={"City"}
               readOnly
             />

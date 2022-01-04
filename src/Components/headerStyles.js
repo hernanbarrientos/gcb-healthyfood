@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.nav`
-  padding: 1% 10%;
+  padding-top: 2%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-evenly;
 `;
 export const Subtitle = styled.h1`
@@ -23,8 +25,8 @@ export const Subtitle = styled.h1`
     font-size: 1.9rem;
   }
 
-  @media (max-width: 480px) {
-    font-size: 1.2rem;
+  @media (max-width: 300px) {
+    font-size: 1.3rem;
   }
 `;
 
@@ -37,7 +39,7 @@ export const ContainerNav = styled.div`
 export const Button = styled.button`
   color: #91ad3b;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 500;
   margin: 0.3em;
   padding: 0.5em;
@@ -49,17 +51,17 @@ export const Button = styled.button`
     transition: 0.6s;
   }
   @media (max-width: 720px) {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 0.3rem;
   }
 
-  @media (max-width: 600px) {
-    font-size: 0.8rem;
+  @media (max-width: 500px) {
+    font-size: 0.9rem;
     margin: 0.3rem 0.3rem;
     padding: 0.2rem;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 300px) {
     font-size: 0.7rem;
     margin: 0.1rem 0.1rem;
     padding: 0.1rem;
