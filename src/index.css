@@ -1,18 +1,79 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+@import url("https://use.typekit.net/yex1ueh.css");
+
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
-  
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  width: 100vw;
+  height: 100vh;
+
+  font-family: 'muli', "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: muli, sans-serif;
+.container {
+  padding: 0;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./images/illustration.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+
+.main {
+  width: 28vw;
+  font-size: 1.8em;
+  line-height: 1.5;
+  margin-left: 8%;
+  margin-top: 12%;
+}
+.main h1 {
+  color: #1d164d;
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+}
+
+/* Two Section */
+
+.twoSection {
+  margin: 0 auto;
+  padding: 6%;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1 {
+  color: #1d164d;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+}
+
+.text-section-two {
+  margin: 1% auto;
+  width: 45%;
+}
+.text-section-two h4 {
+  font-weight: 300;
+  font-size: 1.1em;
+  color: gray;
+  font-family: "muli", sans-serif;
+}
+
+.cards {
+  margin: 2% auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  grid-gap: 2%;
 }

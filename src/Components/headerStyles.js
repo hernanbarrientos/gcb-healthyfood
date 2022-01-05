@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.nav`
-  padding-top: 2%;
+  padding: 2% 8%;
   width: 100%;
   margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 `;
 export const Subtitle = styled.h1`
   font-size: 2.5rem;
@@ -37,7 +37,7 @@ export const ContainerNav = styled.div`
 `;
 
 export const Button = styled.button`
-  color: #91ad3b;
+  color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 500;
@@ -45,9 +45,9 @@ export const Button = styled.button`
   padding: 0.5em;
 
   &:hover {
-    color: white;
-    background-color: #badc58;
-    border-radius: 3px;
+    color: #badc58;
+    background-color: #fff;
+    border-radius: 4px;
     transition: 0.6s;
   }
   @media (max-width: 720px) {
