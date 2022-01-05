@@ -7,14 +7,15 @@ function CardsRecipes(props) {
 
   const Card = styled.div`
     margin: 2%;
-    width: 500px;
-    height: 200px;
+    width: 550px;
+    height: 250px;
     background-color: #fff;
     display: flex;
     align-items: center;
+    text-align: center;
     object-fit: cover;
     border-radius: 12px;
-    box-shadow: 0.5px 0.5px 3.5px gray  ;
+    box-shadow: 2px 2px 8px #f1f1f1;
   `
    const CardText = styled.div`
    padding:4%;
@@ -24,7 +25,7 @@ function CardsRecipes(props) {
  `
   const Image = styled.img`
   object-fit: cover;
-  height:200px;
+  height:250px;
   
   `
 

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.nav`
+  position: absolute;
   padding: 2% 8%;
   width: 100%;
   margin: auto;
