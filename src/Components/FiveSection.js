@@ -4,6 +4,7 @@ import ImgFooter from "../images/bloco_final_image.svg"
 
 function FiveSection(props) {
   return (
+    <>
     <section className="fiveSection">
         <article className="fiveSection-text">
           <h1> Join our membership to get special offer </h1>
@@ -15,8 +16,14 @@ function FiveSection(props) {
         </article>
         <div>
           <img src={ImgFooter} alt="img-left" />
-        </div>
+        </div>        
       </section>
+      <footer className="footer">
+      <p> Reproduzido por Hernán Barrientos</p>
+      <p> 2022 </p>
+      <p> todos direitos reservados </p>
+    </footer>
+    </>
   );
 }
 export default FiveSection;

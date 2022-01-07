@@ -3,6 +3,7 @@ import axios from "axios";
 import Cookies from "js-cookie";
 import { Container, Form, InputForm, Button } from "./signUpStyles";
 import swal from "sweetalert2";
+import Header from "./Header";
 
 const SignUp = () => {
   const [form, setForm] = useState({
@@ -86,6 +87,8 @@ const SignUp = () => {
   const zipCodeAuto = form.zipCode.length == 8 ? true : false;
 
   return (
+    <>
+    
     <Container>
       <Form onSubmit={handleSignUp}>
         <InputForm
@@ -160,6 +163,8 @@ const SignUp = () => {
         <Button>Submit</Button>
       </Form>
     </Container>
+    </>
   );
 };
+
 export default SignUp;

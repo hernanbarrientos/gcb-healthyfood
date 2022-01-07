@@ -7,7 +7,7 @@ import comida4 from "../images/comida_4.svg"
 
 function TwoSection(props) {
   return (
-    <section className="twoSection">
+    <section className="twoSection" >
       <h1>Our Best Recipes</h1>
       <article className="twoSection-text">
         <p className="subtitle">

@@ -5,14 +5,19 @@ import comida1 from "../images/comida_1.svg";
 function CardsRecipes(props) {
   const Card = styled.div`
     margin: 1%;
-    width: 35vw;
-    height: 20vh;
+    width: 100%;
+    height: 60%;
     background-color: #fff;
     display: flex;
     border-radius: 12px;
     box-shadow: 2px 2px 8px #f1f1f1;
     align-content: center;
     align-items: center;
+
+    @media (min-width: 500px) and (max-width: 900px) {
+      width: 60vw;
+      height: 20vh;
+    }
 
     @media (min-width: 200px) and (max-width: 610px) {
       width: 85vw;
@@ -30,13 +35,13 @@ function CardsRecipes(props) {
       width: 90%;
       line-height: 1.1;
 
-      @media (min-width: 200px) and (max-width: 610px) {
+      @media (min-width: 200px) and (max-width: 900px) {
         font-size: 0.8em;
       }
     }
   `;
   const Image = styled.img`
-    height: 20vh;
+    height: 100%;
   `;
   const Button = styled.button`
     width: 9vw;
@@ -50,10 +55,11 @@ function CardsRecipes(props) {
     font-family: "muli";
     margin: 3% 0;
 
-    @media (min-width: 200px) and (max-width: 610px) {
-      width: 30vw;
+    @media (min-width: 200px) and (max-width: 900px) {
+      width: 60%;
       height: 4.8vh;
       font-size: 0.8rem;
+      padding: 2%;
     }
 
     :hover {

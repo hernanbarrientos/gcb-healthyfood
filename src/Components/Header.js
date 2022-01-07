@@ -11,19 +11,6 @@ function Header() {
           <li><a href="#">BLOG</a></li>
           <li><a href="#">JOIN</a></li>
           <li><a href="#">REGISTER</a></li>
-        
-        {/* <Button as="a" href="#">
-        HEALTHY RECIPES
-        </Button>
-        <Button as="a" href="#">
-          BLOG
-        </Button>
-        <Button as="a" href="#">
-          JOIN
-        </Button>
-        <Button as="a" href="#">
-          REGISTER
-        </Button> */}
       </ul>
     </Nav>
     </Container>

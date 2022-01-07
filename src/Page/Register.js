@@ -1,18 +1,27 @@
 import React from "react";
-import Header from "../Components/Header";
 import SignUp from "../Components/SignUp";
-import { PageContainer, Subtitle, SignUpContainer } from "./styles";
+import { PageContainer, Subtitle, SignUpContainer, ImagePage, Title, Nav, Header } from "./styles";
+import ImgHeader from "../images/illustration.svg"
 
 function Register() {
   return (
     <PageContainer>
-      {/* <Header /> */}
+      <Header>
+      <Title>Healthy Food</Title>
+    <Nav>
+      <ul>          
+          <li><a href="#">BACK</a></li>
+      </ul>
+    </Nav>  
+    </Header>    
+      <ImagePage src={ImgHeader} alt="img-right" />
       <SignUpContainer>
-        <Subtitle>REGISTER</Subtitle>
+      <Subtitle>REGISTER</Subtitle>        
         <SignUp />
       </SignUpContainer>
     </PageContainer>
   );
 }
+
 
 export default Register;

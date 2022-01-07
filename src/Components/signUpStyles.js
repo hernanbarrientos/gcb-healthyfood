@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 50vw;
+  width: 50%;
   padding: 0 auto;
-  margin: 2% auto;
-  align-items: center;
+  margin: 0 auto;
 
   @media (max-width: 600px) {
     font-size: 0.7rem;
@@ -21,9 +20,9 @@ export const Form = styled.form`
 export const InputForm = styled.input`
   margin: auto;
   margin-bottom: 3%;
-  padding: 2% auto;
+  padding-left: 2%;
   width: 80%;
-  height: 3.5vh;
+  height: 6vh;
   color: #1d164d;
   font-size: 1.2rem;
   border: none;
@@ -31,9 +30,7 @@ export const InputForm = styled.input`
   box-shadow: 0.5px 0.5px 2px;
 
   @media (max-width: 600px) {
-    font-size: 0.7rem;
-    height: 2.5vh;
-    width: 100%;
+    width: 80%;
   }
   @media (max-width: 480px) {
     font-size: 0.7rem;
@@ -41,10 +38,10 @@ export const InputForm = styled.input`
     border-radius: 2.5px;
   }
   @media (max-width: 300px) {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     height: 100%;
     border-radius: 1.5px;
-    margin-bottom: 6%;
+    margin-top: 6%;
   }
 `;
 export const Button = styled.button`

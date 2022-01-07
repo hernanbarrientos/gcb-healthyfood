@@ -9,90 +9,80 @@
 }
 
 body {
-  width: 100vw; 
+  max-width: 1000px;
+  width: 100vw;
   height: 100vh;
-
-  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell","montserrat"
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
 }
 
 .oneSection {
   margin: 0 auto;
-  margin-bottom: 10%;  
   width: 100%;
   height: 100vh;
-  
-  
 }
 
 .oneSection img {
-  position:absolute;
-  right: 0;
+  float: right;
+  /* position: absolute;
+  right: 0; */
   width: 65%;
-  
 }
 
 .oneSection-title {
-  width: 45%;
+  width: 50%;
   line-height: 1.6;
-  padding-left: 8%;
+  padding-left: 6%;
   padding-top: 18%;
 }
 
 .oneSection-title h1 {
+  width: 80%;
   color: #1d164d;
   font-family: "montserrat", sans-serif;
-  font-size: 2.6rem;
-  
+  font-size: 2rem;
 }
 
-.oneSection-input-button{
-  display:flex;
+.oneSection-input-button {
+  display: flex;
 }
 
-.oneSection input{
- height: 6vh;
- width: 24vw;
- border-radius: 4px;
- border: 1.8px solid rgb(90, 88, 88);
- padding: 4%;
- font-size: 1rem;
- font-family: "muli";
- margin-right: 4%;
+.oneSection input {
+  height: 8vh;
+  width: 24vw;
+  border-radius: 4px;
+  border: 1.8px solid rgb(90, 88, 88);
+  padding: 4%;
+  font-size: 1rem;
+  font-family: "muli";
+  margin-right: 4%;
 }
 
-.oneSection button{
-  width: 8vw;
-  height: 6vh;
+.oneSection button {
+  width: 15vw;
+  height: 8vh;
   border-radius: 4px;
   border: none;
   color: white;
   background-color: #badc58;
   cursor: pointer;
-
 }
 .oneSection button:hover {
-    color: #badc58;
-    background-color: #1d164d;
-    border-radius: 6px;
-    transition: 0.6s;
+  color: #badc58;
+  background-color: #1d164d;
+  border-radius: 6px;
+  transition: 0.6s;
 }
-
-
 
 /* Two Section */
 
 .twoSection {
-  height: 100%;
   width: 100%;
-  padding: 6%;
+  padding: 4%;
   background-color: #fafafa;
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 0 auto;
+  margin: 0;
 }
 
 h1 {
@@ -110,60 +100,58 @@ h1 {
 .subtitle {
   font-weight: 300;
   line-height: 1.5;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: gray;
   font-family: "muli", sans-serif;
 }
 
 .twoSection-cards {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: center; 
-  align-content: center;
-  gap:4%;
   
+  justify-content: center;
+  align-content: center;
+  gap: 1%;
 }
 /* Section Three */
 
-.threeSection{  
+.threeSection {
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 0;
 }
 
-.threeSection img{
+.threeSection img {
   width: 100%;
 }
 
-
-.threeSection-text{
+.threeSection-text {
   margin: 0 auto;
   width: 90%;
   text-align: left;
   padding-right: 10%;
-  
 }
-.threeSection-text h1{
+.threeSection-text h1 {
   width: 90%;
-  font-size: 2rem;
-  line-height: 1.5;  
+  font-size: 1.8rem;
+  line-height: 1.5;
 }
-.threeSection-text p{
+.threeSection-text p {
   margin: 6% 0;
   width: 90%;
   line-height: 1.5;
-  font-size:1.2rem;
+  font-size: 1rem;
   color: rgb(196, 194, 194);
 }
 
 .threeSection button {
-  width: 12vw;
-  height: 10vh;
+  width: 9vw;
+  height: 7vh;
   border-radius: 4px;
   border: none;
   color: white;
@@ -180,17 +168,14 @@ h1 {
   cursor: pointer;
 }
 
-
 /* section four */
-.fourSection{
+.fourSection {
   background-color: #fafafa;
   width: 100%;
-  height: 100%;  
+  height: 100%;
   text-align: center;
   padding: 6% 0 8% 8%;
-  
 }
- 
 
 .fourSection p {
   width: 60%;
@@ -201,54 +186,50 @@ h1 {
   letter-spacing: 0.2rem;
   font-size: 1.1em;
   color: gray;
-  
 }
 
-.fourSection-cards{
+.fourSection-cards {
   display: flex;
   overflow-y: hidden;
 }
 
 /* five Section */
 
-.fiveSection{  
+.fiveSection {
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 0;
 }
 
-.fiveSection img{
+.fiveSection img {
   width: 100%;
 }
 
-
-.fiveSection-text{
+.fiveSection-text {
   margin: 0 auto;
   padding: 0 auto;
   width: 80%;
   text-align: left;
   align-items: center;
   align-content: center;
-  
-  
 }
-.fiveSection-text h1{
+.fiveSection-text h1 {
   width: 90%;
   font-size: 2.1rem;
   line-height: 1.5;
-  font-family: "montserrat";  
+  font-family: "montserrat";
 }
 .fiveSection-input-button {
   margin: 6% 0;
   width: 100%;
   line-height: 1.5;
-  font-size:1.2rem;
+  font-size: 1.2rem;
   color: rgb(196, 194, 194);
 }
-.fiveSection input{
+.fiveSection input {
   height: 8vh;
   width: 24vw;
   border-radius: 4px;
@@ -257,35 +238,80 @@ h1 {
   font-size: 1rem;
   font-family: "muli";
   margin-right: 4%;
- }
- 
- .fiveSection button{
-   width: 8vw;
-   height: 8vh;
-   border-radius: 4px;
-   border: none;
-   color: white;
-   background-color: #badc58;
-   font-size: larger;
-   box-shadow: 2px 2px 8px #dcf591;
-   cursor: pointer;
- }
- .fiveSection button:hover {
+}
+
+.fiveSection button {
+  width: 8vw;
+  height: 8vh;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  background-color: #badc58;
+  font-size: larger;
+  box-shadow: 2px 2px 8px #dcf591;
+  cursor: pointer;
+}
+.fiveSection button:hover {
   color: #badc58;
   background-color: #1d164d;
   border-radius: 6px;
   transition: 0.6s;
-  
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 4%;
+}
+.footer p {
+  color: rgb(196, 194, 194);
+  letter-spacing: 0.2rem;
+}
+
+@media (min-width: 900px) and (max-width: 1100px) {
+  .oneSection {
+    height: 90vh;
+  }
+  /* .twoSection-cards {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2%;
+  } */
+  /* Three section */
+  .threeSection {
+    margin: 0 auto;
+    margin-bottom: 5%;
+    width: 100%;
+    display: grid;
+    flex-direction: column;
+
+    row-gap: 2%;
+  }
+  .threeSection img {
+    left: 0;
+    position: relative;
+    width: 110%;
+  }
+  .threeSection button {
+    width: 30vw;
+    height: 5vh;
+  }
 }
 
 @media (min-width: 500px) and (max-width: 900px) {
   .oneSection {
     margin: 0 auto;
-    margin-bottom: 10%;  
+    margin-bottom: 10%;
     width: 100%;
-    height: 60vh;
-    align-items: flex-end;      
-  }  
+    height: 50vh;
+    align-items: flex-end;
+  }
   .oneSection-title h1 {
     position: relative;
     bottom: 0;
@@ -293,72 +319,74 @@ h1 {
     font-family: "montserrat", sans-serif;
     font-size: 1.5rem;
     margin-top: 20%;
-    
   }
-  .oneSection button{
+  .oneSection button {
     width: 50%;
-    
   }
 
   /* Cards Recipes */
 
-  .twoSection-cards {
-    margin: 0 auto;
-    width: 80%;
-     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 4%;
-    justify-content: center; 
-    
-  }
-  
-  
-}
-
-@media (min-width: 200px) and (max-width: 610px) {
-  
-  .oneSection {
-    height: 45vh
-  }  
-
-
-  .oneSection-title {
-    position:absolute;
-    width: 100%;
-    padding-left: 3%;
-    padding-right: 3%;
-    margin-top: 25%;
-  }  
- 
-  .oneSection-title h1 {
-    width: 80%;
-    font-size: 1rem;
-    margin-top: 20%;
-    
-  }
-  .oneSection img {
-   width: 69%;
-  }
-    
-  .oneSection input{
-   width: 80%;
-   
-  }
-  .oneSection button{
-    width: 20%;
-  }
-
-  
-  /* Cards Recipes */
-  
-  
   .twoSection-cards {
     margin: 0 auto;
     width: 100%;
     display: flex;
-    flex-direction: column;    
-    row-gap: 2%;  
-    
+    flex-direction: column;
+    row-gap: 2%;
+    align-items: center;
+  }
+
+  .twoSection-text {
+    margin: 1% auto;
+    width: 100%;
+  }
+  /* Three section */
+  .threeSection {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2%;
+  }
+  .threeSection button {
+    width: 30vw;
+    height: 5vh;
+  }
+}
+@media (min-width: 200px) and (max-width: 500px) {
+  .oneSection {
+    height: 55vh;
+  }
+
+  .oneSection-title {
+    position: absolute;
+    width: 90%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 25%;
+  }
+
+  .oneSection-title h1 {
+    width: 80%;
+    font-size: 1rem;
+    margin-top: 20%;
+  }
+
+  .oneSection input {
+    width: 80%;
+  }
+  .oneSection button {
+    width: 20%;
+  }
+
+  /* Cards Recipes */
+
+  .twoSection-cards {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2%;
   }
 
   .twoSection-text {
@@ -371,16 +399,14 @@ h1 {
     margin: 0 auto;
     width: 100%;
     display: flex;
-    flex-direction: column;    
-    row-gap: 2%; 
+    flex-direction: column;
+    row-gap: 2%;
   }
-  .threeSection button{
+  .threeSection button {
+    width: 30vw;
+    height: 5vh;
+  }
 
-  width: 30vw;
-  height: 5vh;
-     
-  }
-  
   /* fourSection */
 
   .fourSection p {
@@ -392,25 +418,28 @@ h1 {
     letter-spacing: 0.2rem;
     font-size: 1rem;
     color: gray;
+  }
 
+  /* fiveSection */
+
+  .fiveSection {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2%;
+  }
+  .fiveSection input {
+    width: 70%;
+  }
+  .fiveSection button {
+    width: 20%;
+  }
+
+  .footer p {
+    color: rgb(196, 194, 194);
+    letter-spacing: 0;
+    font-size: 0.5rem;
+    display: inline;
+  }
 }
-
-/* fiveSection */
-
-.fiveSection {
-  margin: 0 auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;    
-  row-gap: 2%; 
-}
-.fiveSection input{
-  width: 70%;
-  
- }
- .fiveSection button{
-   width: 20%;
- }
-}
-
-  

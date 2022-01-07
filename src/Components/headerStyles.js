@@ -1,25 +1,26 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  position: absolute;
+  margin: 0 auto;
+  padding: 2% 4% 2% 4%;
+  text-align: center;
+  z-index: 1;
 
-width: 100%;
-display: flex;
-justify-content: space-around;
-align-content: center;
-align-items: center;
-position: absolute;
-margin: 0 auto;
-padding-top: 3%;
-text-align: center;
-
-@media (min-width: 200px) and (max-width: 600px) {
-  width: 33.3333%;
-  display: block;
-  align-content: left; 
-  text-align: left;
-  margin-left: 2%;
+  @media (min-width: 200px) and (max-width: 600px) {
+    width: 33.3333%;
+    display: block;
+    align-content: left;
+    text-align: left;
+    margin-left: 2%;
   }
-`
+`;
 
 export const Subtitle = styled.h1`
   font-size: 2rem;
@@ -36,25 +37,23 @@ export const Subtitle = styled.h1`
     font-size: 1.2rem;
     margin: 0.3rem;
   }
-
-
 `;
 
 export const Nav = styled.nav`
-  ul{
+  ul {
     list-style: none;
   }
   ul li {
     display: inline;
-  }    
-    ul li a {
-  margin: 0 auto;
-  color: #fff;
-  text-decoration: none;
-  font-family: "muli", sans-serif;
-  font-size: 1.1rem;
-  font-weight: 600;  
-  padding: 1em;
+  }
+  ul li a {
+    margin: 0 auto;
+    color: #fff;
+    text-decoration: none;
+    font-family: "muli", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1em;
   }
   ul li a:hover {
     color: #badc58;
@@ -62,35 +61,34 @@ export const Nav = styled.nav`
     border-radius: 6px;
     transition: 0.6s;
   }
-  
-  @media (min-width: 600px) and (max-width: 1000px) {
-    ul li a {    font-size: 0.8rem;    }
-  }
-    @media (min-width: 200px) and (max-width: 600px) {
-      ul li {
-    position: relative; }  
-    
-    ul li a {
-    display: block;
-    margin: 0;
-    color: navy;
-    text-decoration: none;
-    font-family: "muli", sans-serif;
-    font-size: 0.8rem;
-    font-weight: 600;  
-    padding: 0.2em;
-    margin: 0.2em;
-    
-  } 
-  ul li a:hover {
-    color: navy;
-    background-color: #badc58;
-    border-radius: 6px;
-    transition: 0.6s;
-    width: 70%;
-  }
 
+  @media (min-width: 600px) and (max-width: 1000px) {
+    ul li a {
+      font-size: 0.8rem;
+    }
+  }
+  @media (min-width: 200px) and (max-width: 600px) {
+    ul li {
+      position: relative;
+    }
+
+    ul li a {
+      display: block;
+      margin: 0;
+      color: #1d164d;
+      text-decoration: none;
+      font-family: "muli", sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.2em;
+      margin: 0.2em;
+    }
+    ul li a:hover {
+      color: #1d164d;
+      background-color: #badc58;
+      border-radius: 6px;
+      transition: 0.6s;
+      width: 70%;
+    }
   }
 `;
-
-
