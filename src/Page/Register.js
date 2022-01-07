@@ -6,7 +6,7 @@ import { PageContainer, Subtitle, SignUpContainer } from "./styles";
 function Register() {
   return (
     <PageContainer>
-      <Header />
+      {/* <Header /> */}
       <SignUpContainer>
         <Subtitle>REGISTER</Subtitle>
         <SignUp />

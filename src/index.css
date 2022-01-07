@@ -5,13 +5,14 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "muli", "montserrat", sans-serif;
 }
 
 body {
-  width: 100vw;
+  width: 100vw; 
   height: 100vh;
 
-  font-family: 'muli', "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell","montserrat"
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,42 +20,79 @@ body {
 
 .oneSection {
   margin: 0 auto;
-  
-  width: 100vw;
+  margin-bottom: 10%;  
+  width: 100%;
   height: 100vh;
+  
   
 }
 
 .oneSection img {
-  position: absolute;
+  position:absolute;
   right: 0;
-  width: 60%;
+  width: 65%;
+  
 }
 
 .oneSection-title {
-  width: 35vw;
-  font-size: 1.7em;
-  line-height: 1.5;
+  width: 45%;
+  line-height: 1.6;
   padding-left: 8%;
-  padding-top: 12%;
+  padding-top: 18%;
 }
 
 .oneSection-title h1 {
   color: #1d164d;
-  font-family: "roboto", sans-serif;
-  font-weight: 700;
+  font-family: "montserrat", sans-serif;
+  font-size: 2.6rem;
+  
 }
+
+.oneSection-input-button{
+  display:flex;
+}
+
+.oneSection input{
+ height: 6vh;
+ width: 24vw;
+ border-radius: 4px;
+ border: 1.8px solid rgb(90, 88, 88);
+ padding: 4%;
+ font-size: 1rem;
+ font-family: "muli";
+ margin-right: 4%;
+}
+
+.oneSection button{
+  width: 8vw;
+  height: 6vh;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  background-color: #badc58;
+  cursor: pointer;
+
+}
+.oneSection button:hover {
+    color: #badc58;
+    background-color: #1d164d;
+    border-radius: 6px;
+    transition: 0.6s;
+}
+
+
 
 /* Two Section */
 
 .twoSection {
-  
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   padding: 6%;
   background-color: #fafafa;
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin: 0 auto;
 }
 
 h1 {
@@ -62,6 +100,7 @@ h1 {
   font-weight: 900;
   letter-spacing: 0.2rem;
   font-size: 2rem;
+  font-family: "montserrat", "muli", sans-serif;
 }
 
 .twoSection-text {
@@ -77,12 +116,13 @@ h1 {
 }
 
 .twoSection-cards {
-  margin: 4% auto;
-  width: 70%;
+  margin: 0 auto;
+  width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 4%;
-  justify-content: center;
+  justify-content: center; 
+  align-content: center;
+  gap:4%;
   
 }
 /* Section Three */
@@ -121,15 +161,33 @@ h1 {
   color: rgb(196, 194, 194);
 }
 
+.threeSection button {
+  width: 12vw;
+  height: 10vh;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  background-color: #badc58;
+  box-shadow: 2px 2px 8px #dcf591;
+  font-size: large;
+  font-family: "muli";
+}
+.threeSection button:hover {
+  color: #badc58;
+  background-color: #1d164d;
+  border-radius: 6px;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
 
 /* section four */
 .fourSection{
   background-color: #fafafa;
   width: 100%;
-  height: 100vh;
+  height: 100%;  
   text-align: center;
-  padding-top: 4%;
-  padding-left: 8%;
+  padding: 6% 0 8% 8%;
   
 }
  
@@ -150,3 +208,209 @@ h1 {
   display: flex;
   overflow-y: hidden;
 }
+
+/* five Section */
+
+.fiveSection{  
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 0;
+}
+
+.fiveSection img{
+  width: 100%;
+}
+
+
+.fiveSection-text{
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 80%;
+  text-align: left;
+  align-items: center;
+  align-content: center;
+  
+  
+}
+.fiveSection-text h1{
+  width: 90%;
+  font-size: 2.1rem;
+  line-height: 1.5;
+  font-family: "montserrat";  
+}
+.fiveSection-input-button {
+  margin: 6% 0;
+  width: 100%;
+  line-height: 1.5;
+  font-size:1.2rem;
+  color: rgb(196, 194, 194);
+}
+.fiveSection input{
+  height: 8vh;
+  width: 24vw;
+  border-radius: 4px;
+  border: 1.8px solid rgb(90, 88, 88);
+  padding: 4%;
+  font-size: 1rem;
+  font-family: "muli";
+  margin-right: 4%;
+ }
+ 
+ .fiveSection button{
+   width: 8vw;
+   height: 8vh;
+   border-radius: 4px;
+   border: none;
+   color: white;
+   background-color: #badc58;
+   font-size: larger;
+   box-shadow: 2px 2px 8px #dcf591;
+   cursor: pointer;
+ }
+ .fiveSection button:hover {
+  color: #badc58;
+  background-color: #1d164d;
+  border-radius: 6px;
+  transition: 0.6s;
+  
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+  .oneSection {
+    margin: 0 auto;
+    margin-bottom: 10%;  
+    width: 100%;
+    height: 60vh;
+    align-items: flex-end;      
+  }  
+  .oneSection-title h1 {
+    position: relative;
+    bottom: 0;
+    color: #1d164d;
+    font-family: "montserrat", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 20%;
+    
+  }
+  .oneSection button{
+    width: 50%;
+    
+  }
+
+  /* Cards Recipes */
+
+  .twoSection-cards {
+    margin: 0 auto;
+    width: 80%;
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4%;
+    justify-content: center; 
+    
+  }
+  
+  
+}
+
+@media (min-width: 200px) and (max-width: 610px) {
+  
+  .oneSection {
+    height: 45vh
+  }  
+
+
+  .oneSection-title {
+    position:absolute;
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 25%;
+  }  
+ 
+  .oneSection-title h1 {
+    width: 80%;
+    font-size: 1rem;
+    margin-top: 20%;
+    
+  }
+  .oneSection img {
+   width: 69%;
+  }
+    
+  .oneSection input{
+   width: 80%;
+   
+  }
+  .oneSection button{
+    width: 20%;
+  }
+
+  
+  /* Cards Recipes */
+  
+  
+  .twoSection-cards {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;    
+    row-gap: 2%;  
+    
+  }
+
+  .twoSection-text {
+    margin: 1% auto;
+    width: 100%;
+  }
+
+  /* Three section */
+  .threeSection {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;    
+    row-gap: 2%; 
+  }
+  .threeSection button{
+
+  width: 30vw;
+  height: 5vh;
+     
+  }
+  
+  /* fourSection */
+
+  .fourSection p {
+    width: 100%;
+    padding: 2%;
+    margin: 0 auto;
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    color: gray;
+
+}
+
+/* fiveSection */
+
+.fiveSection {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;    
+  row-gap: 2%; 
+}
+.fiveSection input{
+  width: 70%;
+  
+ }
+ .fiveSection button{
+   width: 20%;
+ }
+}
+
+  

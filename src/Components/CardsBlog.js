@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import blog1 from "../images/blog_image_1.svg";
-import user01 from "../images/user01.jpg"
+
 
 function CardsBlog(props) {
   const Card = styled.div`
-    margin: 2%;
-    width: 20em;
-    height: 28em;
+    margin: 0 1%;
+    width: 21.5em;
+    height: 26em;
     background-color: #fff;
     text-align: left;
     object-fit: cover;
@@ -17,7 +17,7 @@ function CardsBlog(props) {
 
   const Image = styled.img`
     object-fit: cover;
-    width: 20rem;
+    width: 21.5rem;
   `;
 
   const CardText = styled.div`
@@ -25,38 +25,44 @@ function CardsBlog(props) {
     text-align: left;
     width: 100%;
     letter-spacing: 0.1rem;
+    font-family: "muli";
   `;
 
   const TextBlog = styled.h2`
-  color: #1d164d;
-  font-weight: 900;
-  letter-spacing: 0.2rem;
-  font-size: 1.5rem;
-  
-  `
+    color: #1d164d;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    font-size: 1.34rem;
+  `;
   const FooterContainer = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  `
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-left: 6%;
+
+    p {
+      margin: 0 0 0 2%;
+      font-family: "muli";
+      font-weight: 600;
+      font-size: medium;
+    }
+  `;
   const ImgFooter = styled.img`
-  border-radius: 50px;
-  width: 70px;
-  `
-  
+    border-radius: 50px;
+    width: 60px;
+  `;
 
   return (
     <Card>
-      <Image src={blog1} />
+      <Image src={props.blogImage} />
       <CardText>
-        <TextBlog>Quick-start guide to nuts and seeds</TextBlog>
-        </CardText>
-        <FooterContainer> 
-          <ImgFooter src={user01} alt="user image" />         
-          <p>User Name</p>
-          </FooterContainer>
-      
+        <TextBlog>{props.title}</TextBlog>
+      </CardText>
+      <FooterContainer>
+        <ImgFooter src={props.userImage} alt="user image" />
+        <p>{props.userName}</p>
+      </FooterContainer>
     </Card>
   );
 }
