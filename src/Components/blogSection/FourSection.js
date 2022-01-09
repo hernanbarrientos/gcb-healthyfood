@@ -1,24 +1,28 @@
 import React from "react";
-import CardsBlog from "./CardsBlog";
-import user01 from "../images/user01.jpg"
-import user02 from "../images/user02.jpg"
-import user03 from "../images/user03.jpg"
-import user04 from "../images/user04.jpg"
-import imgblog01 from "../images/blog_image_1.svg"
-import imgblog02 from "../images/bloco_image_2.svg"
-import imgblog03 from "../images/bloco_image_3.svg"
-import imgblog04 from "../images/bloco_image_4.svg"
+import CardsBlog from "../cardsblog/CardsBlog";
+import user01 from "../../images/user01.jpg"
+import user02 from "../../images/user02.jpg"
+import user03 from "../../images/user03.jpg"
+import user04 from "../../images/user04.jpg"
+import imgblog01 from "../../images/blog_image_1.svg"
+import imgblog02 from "../../images/bloco_image_2.svg"
+import imgblog03 from "../../images/bloco_image_3.svg"
+import imgblog04 from "../../images/bloco_image_4.svg"
+import {
+  ContainerBlog,
+  CardContainers
+} from "./styles"
 
 
 function FourSection() {
   return (
-    <section className="fourSection">
+    <ContainerBlog>
         <h1>Read Our Blog</h1>
         <p>
           Far far away, behind the word mountains, far from the countries
           Vokalia and Consonantia, there live the blind texts
         </p>
-        <div className="fourSection-cards">
+        <CardContainers>
           <CardsBlog
           blogImage={imgblog01}
           title="Quick-start guide to nuts and seeds"
@@ -42,8 +46,8 @@ function FourSection() {
           title="what are the best foods to eat nd have a healthy"
           userName="Hanna Bergman"
           userImage={user03}/>
-        </div>
-      </section>
+        </CardContainers>
+      </ContainerBlog>
   );
 }
 export default FourSection;

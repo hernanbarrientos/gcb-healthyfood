@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.header`
   max-width: 1000px;
   width: 100%;
   display: flex;
@@ -23,11 +23,11 @@ export const Container = styled.div`
 `;
 
 export const Subtitle = styled.h1`
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 800;
   letter-spacing: 1pt;
   margin: 2%;
-  color: #badc58;
+  color: var(--secondary);
 
   @media (min-width: 500px) and (max-width: 900px) {
     font-size: 1.2rem;
@@ -56,7 +56,7 @@ export const Nav = styled.nav`
     padding: 1em;
   }
   ul li a:hover {
-    color: #badc58;
+    color: var(--secondary);
     background-color: #fff;
     border-radius: 6px;
     transition: 0.6s;
@@ -75,7 +75,7 @@ export const Nav = styled.nav`
     ul li a {
       display: block;
       margin: 0;
-      color: #1d164d;
+      color: var(--primary);
       text-decoration: none;
       font-family: "muli", sans-serif;
       font-size: 0.8rem;
@@ -84,11 +84,12 @@ export const Nav = styled.nav`
       margin: 0.2em;
     }
     ul li a:hover {
-      color: #1d164d;
-      background-color: #badc58;
-      border-radius: 6px;
+      color: var(--primary);
+      background-color: var(--secondary);
+      border-radius: 2px;
       transition: 0.6s;
-      width: 70%;
+      width: 100%;
+      height: 100%;
     }
   }
 `;

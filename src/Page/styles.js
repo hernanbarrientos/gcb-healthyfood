@@ -9,7 +9,7 @@ export const PageContainer = styled.div`
   
 `;
 export const Header = styled.header`
-  max-width: 1000px;
+  max-width:1000px;
   width: 100%;
   display: flex;
   justify-content:space-between;
@@ -20,13 +20,7 @@ export const Header = styled.header`
   padding: 3%;
   z-index: 1;
 
-  /* @media (min-width: 200px) and (max-width: 600px) {
-    width: 33.3333%;
-    display: block;
-    align-content: left;
-    text-align: left;
-    margin-left: 2%;
-  } */
+  
 `;
 
 
@@ -35,7 +29,8 @@ export const Title = styled.h1`
   font-weight: 800;
   letter-spacing: 1pt;
   margin: 2%;
-  color: #badc58;
+  color: var(--secondary);
+  
 
   @media (min-width: 500px) and (max-width: 900px) {
     font-size: 1.2rem;
@@ -56,8 +51,8 @@ export const Nav = styled.nav`
   }
   ul li a {
     margin: 0 auto;
-    color: #1d164d;
-    background-color: #badc58;
+    color: var(--primary);
+    background-color: var(--secondary);
     border-radius: 6px;
     text-decoration: none;
     font-family: "muli", sans-serif;
@@ -66,9 +61,9 @@ export const Nav = styled.nav`
     padding: 1em;
   }
   ul li a:hover {
-    color: #badc58;
-    background-color: #1d164d;
-    border-radius: 6px;
+    color: var(--secondary);
+    background-color: var(--primary);
+    border-radius: 4px;
     transition: 0.6s;
   }
 
@@ -85,7 +80,7 @@ export const Nav = styled.nav`
     ul li a {
       display: block;
       margin: 0;
-      color: #1d164d;
+      color: var(--primary);
       text-decoration: none;
       font-family: "muli", sans-serif;
       font-size: 0.8rem;
@@ -94,8 +89,8 @@ export const Nav = styled.nav`
       margin: 0.2em;
     }
     ul li a:hover {
-      color: #1d164d;
-      background-color: #badc58;
+      color: var(--primary);
+      background-color: var(--secondary);
       border-radius: 6px;
       transition: 0.6s;
       width: 70%;
@@ -127,10 +122,11 @@ export const SignUpContainer = styled.div`
 export const Subtitle = styled.h1`
   font-size: 1.7em;
   font-weight: 700;
-  color: #1d164d;
+  color: var(--primary);
 
   @media (max-width: 600px) {
     font-size: 1.2rem;
     font-weight: 600;
+    margin-top: 1rem;
   }
 `;

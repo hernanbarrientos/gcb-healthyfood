@@ -1,5 +1,5 @@
 import React from "react";
-import {Container, Nav, Button, Subtitle, Ul } from "./headerStyles";
+import {Container, Nav, Subtitle } from "./styles";
 
 function Header() {
   return (

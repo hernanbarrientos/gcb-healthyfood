@@ -1,9 +1,9 @@
 import React from "react";
-import SignUp from "../Components/SignUp";
+import SignUp from "../Components/form/SignUp";
 import { PageContainer, Subtitle, SignUpContainer, ImagePage, Title, Nav, Header } from "./styles";
 import ImgHeader from "../images/illustration.svg"
 
-function Register() {
+const Register = () => {
   return (
     <PageContainer>
       <Header>

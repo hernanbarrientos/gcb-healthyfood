@@ -1,15 +1,23 @@
 import React from "react";
-import ImgServiceLeft from "../images/bloco_services.svg";
+import ImgServiceLeft from "../../images/bloco_services.svg";
+import {
+  ContainerSection,
+  ContainerImgLeft,
+  ContainerText,  
+  ButtonSection,
 
+
+
+} from "./styles"
 
 function ThreeSection(props) {
   return (
 
-    <section className="threeSection">
-        <div className="threeSection-img">
-          <img src={ImgServiceLeft} alt="img-left" />
-        </div>
-        <div className="threeSection-text">
+    <ContainerSection>
+        <ContainerImgLeft>
+          <img src={ImgServiceLeft} alt="image services left" />
+        </ContainerImgLeft>
+        <ContainerText>
           <h1> The best services ready To serve you </h1>
 
           <p>
@@ -27,9 +35,9 @@ function ThreeSection(props) {
             Semantics, a large language ocean.
           </p>
 
-          <button> Know More </button>
-        </div>
-      </section>
+          <ButtonSection> Know More </ButtonSection>
+        </ContainerText>
+      </ContainerSection>
     
   );
 }
