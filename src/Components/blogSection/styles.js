@@ -26,7 +26,7 @@ export const ContainerBlog = styled.section`
     P {
       width: 90%;
       line-height: 1.1;
-    letter-spacing: 0.1rem
+      letter-spacing: 0.1rem;
     }
   }
 `;

@@ -35,7 +35,7 @@ export const ContainerText = styled.article`
     font-size: 2rem;
     line-height: 1.5;
   }
-  
+
   p {
     margin: 6% 0;
     width: 90%;

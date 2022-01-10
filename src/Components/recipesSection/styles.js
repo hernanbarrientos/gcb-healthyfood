@@ -13,9 +13,7 @@ export const ContainerSection = styled.section`
     font-weight: 900;
     letter-spacing: 0.2rem;
     font-size: 2rem;
-    
   }
- 
 `;
 export const ContainerArticle = styled.article`
   margin: 1% auto;

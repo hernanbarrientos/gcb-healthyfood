@@ -19,7 +19,6 @@ export const Form = styled.form`
 `;
 
 export const Input = styled.input`
-  
   margin-bottom: 5%;
   padding-left: 2%;
   width: 100%;
@@ -34,9 +33,7 @@ export const Input = styled.input`
     width: 80%;
     border-radius: 2.5px;
     margin: 10px;
-    
   }
-   
 `;
 
 export const Label = styled.label`
@@ -68,7 +65,6 @@ export const Button = styled.button`
   font-size: 1.5rem;
   font-weight: 500;
   margin: auto;
-  
 
   &:hover {
     color: white;
@@ -76,10 +72,8 @@ export const Button = styled.button`
     border-radius: 3px;
     transition: 0.6s;
   }
-  @media(min-width: 200px) and (max-width: 600px) {
+  @media (min-width: 200px) and (max-width: 600px) {
     font-size: 1.2rem;
     margin-top: 10px;
   }
-
-
 `;

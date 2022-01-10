@@ -33,7 +33,7 @@ export const Title = styled.h1`
   @media (min-width: 200px) and (max-width: 600px) {
     margin-top: 150px;
     font-size: inherit;
-    line-height:1;
+    line-height: 1;
   }
 `;
 export const ContainerInputButton = styled.div`

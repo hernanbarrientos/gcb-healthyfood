@@ -9,10 +9,10 @@ import { ContainerSection, ContainerArticle, ContainerCards } from "./styles";
 
 function TwoSection(props) {
   return (
-    <ContainerSection className="twoSection">
+    <ContainerSection name="recipes">
       <h1>Our Best Recipes</h1>
-      <ContainerArticle className="twoSection-text">
-        <p className="subtitle">
+      <ContainerArticle>
+        <p>
           Far far away, behind the word mountains, far from the countries
           Vokalia and Consonantia, there live the blind texts.
         </p>

@@ -1,15 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import {
-Card,
-CardText,
-Image,
-Button,
-
-} from "./styles"
+import { Card, CardText, Image, Button } from "./styles";
 
 function CardsRecipes(props) {
-
   return (
     <Card>
       <Image src={props.image} />

@@ -82,7 +82,6 @@ export const ContainerInputButton = styled.div`
       height: 100%;
       width: 100%;
     }
-    
 
     &:hover {
       color: var(--secondary);
@@ -91,7 +90,6 @@ export const ContainerInputButton = styled.div`
       transition: 0.6s;
     }
   }
-    
 `;
 export const FooterPage = styled.footer`
   width: 100%;
@@ -107,7 +105,6 @@ export const FooterPage = styled.footer`
 
     @media (max-width: 700px) {
       font-size: 30%;
-      
     }
   }
 `;

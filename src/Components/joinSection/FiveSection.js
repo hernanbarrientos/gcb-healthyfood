@@ -4,18 +4,18 @@ import {
   ContainerJoin,
   ContainerArticle,
   ContainerInputButton,
-  FooterPage
-} from "./styles"
+  FooterPage,
+} from "./styles";
 
 function FiveSection(props) {
   return (
     <>
-      <ContainerJoin>
+      <ContainerJoin key="join">
         <ContainerArticle>
           <h1> Join our membership to get special offer </h1>
 
           <ContainerInputButton>
-            <input placeholder="Enter your email address" type="email"/>
+            <input placeholder="Enter your email address" type="email" />
             <button> Join </button>
           </ContainerInputButton>
         </ContainerArticle>

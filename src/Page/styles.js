@@ -5,24 +5,19 @@ export const PageContainer = styled.div`
   width: 100%;
   height: 100vh;
   margin: 0 auto;
-  
-  
 `;
 export const Header = styled.header`
-  max-width:1000px;
+  max-width: 1000px;
   width: 100%;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-content: center;
   align-items: center;
   position: absolute;
   margin: 0 auto;
   padding: 3%;
   z-index: 1;
-
-  
 `;
-
 
 export const Title = styled.h1`
   font-size: 2rem;
@@ -30,7 +25,6 @@ export const Title = styled.h1`
   letter-spacing: 1pt;
   margin: 2%;
   color: var(--secondary);
-  
 
   @media (min-width: 500px) and (max-width: 900px) {
     font-size: 1.2rem;
@@ -102,10 +96,9 @@ export const ImagePage = styled.img`
   float: right;
   opacity: 0.3;
   @media (min-width: 200px) and (max-width: 900px) {
-    width:70%;
-    
+    width: 70%;
   }
-`
+`;
 
 export const SignUpContainer = styled.div`
   display: flex;
@@ -116,7 +109,6 @@ export const SignUpContainer = styled.div`
   width: 100%;
   position: absolute;
   padding-top: 10%;
-  
 `;
 
 export const Subtitle = styled.h1`

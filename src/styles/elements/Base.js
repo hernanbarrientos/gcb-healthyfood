@@ -1,4 +1,4 @@
-import {createGlobalStyle} from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
 const Base = createGlobalStyle`
 
@@ -18,5 +18,5 @@ const Base = createGlobalStyle`
 
    
   }
-`
+`;
 export default Base;
