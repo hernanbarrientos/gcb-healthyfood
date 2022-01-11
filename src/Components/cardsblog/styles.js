@@ -30,23 +30,26 @@ export const TextBlog = styled.h2`
   letter-spacing: 0.1rem;
   font-size: 1.3rem;
 `;
-export const FooterContainer = styled.div`
+export const FooterContainer = styled.section`
   width: 100%;
   margin: auto;
   display: flex;
   align-items: center;
   align-content: center;
-  padding-left: 4%;
+  padding-left: 0;
   padding-top: 20px;
 
   p {
+    margin-left: 0;
     font-family: "muli";
     font-weight: 600;
-    font-size: 0.7rem;
+    font-size: 01rem;
+    color: var(--texts)
   }
 `;
 
 export const ImgFooter = styled.img`
   border-radius: 50px;
   width: 45px;
+  margin: 4%;
 `;

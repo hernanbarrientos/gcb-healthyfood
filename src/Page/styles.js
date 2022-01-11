@@ -112,9 +112,10 @@ export const SignUpContainer = styled.div`
 `;
 
 export const Subtitle = styled.h1`
-  font-size: 1.7em;
-  font-weight: 700;
+  font-size: 2em;
+  font-weight: 900;
   color: var(--primary);
+  font-family: "muli";
 
   @media (max-width: 600px) {
     font-size: 1.2rem;

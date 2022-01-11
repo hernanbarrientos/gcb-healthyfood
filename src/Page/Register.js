@@ -11,7 +11,17 @@ import {
 } from "./styles";
 import ImgHeader from "../images/illustration.svg";
 
+import { useNavigate } from "react-router-dom"
+
+
+
 const Register = () => {
+const navigate = useNavigate()
+
+const goToBack = () => {
+  navigate("/")
+}
+
   return (
     <PageContainer>
       <Header>
@@ -19,7 +29,7 @@ const Register = () => {
         <Nav>
           <ul>
             <li>
-              <a href="#">BACK</a>
+              <a onClick={goToBack}>BACK</a>
             </li>
           </ul>
         </Nav>

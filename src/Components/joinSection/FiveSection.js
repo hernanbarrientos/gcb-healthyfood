@@ -10,7 +10,7 @@ import {
 function FiveSection(props) {
   return (
     <>
-      <ContainerJoin key="join">
+      <ContainerJoin name="join">
         <ContainerArticle>
           <h1> Join our membership to get special offer </h1>
 

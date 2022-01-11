@@ -3,6 +3,7 @@ import {
   Card,
   Image,
   CardText,
+  NameUser,
   TextBlog,
   FooterContainer,
   ImgFooter,

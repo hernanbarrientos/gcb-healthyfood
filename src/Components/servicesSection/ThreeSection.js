@@ -9,7 +9,7 @@ import {
 
 function ThreeSection(props) {
   return (
-    <ContainerSection key="services">
+    <ContainerSection name="services">
       <ContainerImgLeft>
         <img src={ImgServiceLeft} alt="image services left" />
       </ContainerImgLeft>

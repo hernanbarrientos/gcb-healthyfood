@@ -1,59 +1,42 @@
 import React from "react";
 
-import Register from "../../Page/Register";
-import OneSection from "../../Components/sectionOne/OneSection";
-import TwoSection from "../../Components/recipesSection/TwoSection";
-import ThreeSection from "../../Components/servicesSection/ThreeSection";
-import FourSection from "../../Components/blogSection/FourSection";
-import FiveSection from "../../Components/joinSection/FiveSection";
+
 
 import { Container, Nav, Subtitle } from "./styles";
-// import { Link } from "react-router-dom"
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Link
-} from "react-router-dom";
 
+import { Link, animateScroll as scroll } from "react-scroll";
+import { useNavigate } from "react-router-dom"
 
 function Header() {
-
-    
-     
-      <Routes>
-        <Route exact path="/" element={<OneSection/>} />
-        <Route exact path="/recipes" element={<TwoSection/>} />
-        <Route exact path="/services" element={<ThreeSection/>} />
-        <Route exact path="/blog" element={<FourSection/>} />
-        <Route exact path="/join" element={<FiveSection/>} />
-        <Route exact path="/resgiter" element={<Register/>} />
-      </Routes>
-    
-
+  const navigate = useNavigate()
+ const signUp = () => {
+   navigate("/register")
+ }
 
   return (
-    <Router>
-    <Container>
-      <Subtitle>Healthy Food</Subtitle>
-      <Nav>
-        <ul>
-          <li>
-            <Link to="recipes">HEALTHY RECIPES</Link>
-          </li>
-          <li>
-            <Link to="/blog">BLOG</Link>
-          </li>
-          <li>
-            <Link to="/join">JOIN</Link>
-          </li>
-          <li>
-            <Link to="/register">REGISTER</Link>
-          </li>
-        </ul>
-      </Nav>
-    </Container>
-    </Router>
+   
+      <Container>
+        <Subtitle>Healthy Food</Subtitle>
+        <Nav>
+          <ul>
+            <li>
+              <Link to="recipes" smooth={true} duration={800}>                
+                HEALTHY RECIPES
+              </Link>
+            </li>
+            <li>
+            <Link to="blog" smooth={true} duration={1100}>BLOG</Link>
+            </li>
+            <li>
+              <Link to="join" smooth={true} duration={1300}>JOIN</Link>
+            </li>
+            <li>
+              <a onClick={signUp}>REGISTER</a>
+            </li>
+          </ul>
+        </Nav>
+      </Container>
+    
   );
 }
 

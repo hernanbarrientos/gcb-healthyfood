@@ -5,7 +5,7 @@ import App from "./App";
 
 import Reset from "./styles/generic/Reset";
 import Base from "./styles/elements/Base";
-import {BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 ReactDOM.render(
   <React.StrictMode>
