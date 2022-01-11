@@ -36,6 +36,6 @@ Executar o comando npm install, depois npm start<br>
 Abrir no endereço http://localhost:3000<br><br>
 Hospedado em
 
--   [Healthyfood](http://hernan-barrientos-helthyfood.surge.sh)
+-   [Healthyfood](http://healthyfood-hbarrientos.surge.sh)
 
 
