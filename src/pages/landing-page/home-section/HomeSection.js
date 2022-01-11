@@ -11,7 +11,7 @@ import {
   ButtonInputTitle,
 } from "./styles";
 
-function OneSection(props) {
+function HomeSection(props) {
   return (
     <Container id="home">
       <ImgLeft src={ImgHeader} alt="img-right" />
@@ -26,4 +26,4 @@ function OneSection(props) {
     </Container>
   );
 }
-export default OneSection;
+export default HomeSection;

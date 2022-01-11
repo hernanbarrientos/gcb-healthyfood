@@ -7,11 +7,11 @@ import {
   ButtonSection,
 } from "./styles";
 
-function ThreeSection(props) {
+function ServicesSection(props) {
   return (
     <ContainerSection name="services">
       <ContainerImgLeft>
-        <img src={ImgServiceLeft} alt="image services left" />
+        <img src={ImgServiceLeft} alt="services left" />
       </ContainerImgLeft>
       <ContainerText>
         <h1> The best services ready To serve you </h1>
@@ -36,4 +36,4 @@ function ThreeSection(props) {
     </ContainerSection>
   );
 }
-export default ThreeSection;
+export default ServicesSection;

@@ -21,7 +21,7 @@ import {
   ButtonLeft,
 } from "./styles";
 
-function FourSection() {
+function BlogSection() {
   const carousel = useRef(null);
 
   const handleLeftClick = () => {
@@ -85,4 +85,4 @@ function FourSection() {
     </ContainerBlog>
   );
 }
-export default FourSection;
+export default BlogSection;

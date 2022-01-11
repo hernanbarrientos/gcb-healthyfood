@@ -7,7 +7,7 @@ import comida4 from "../../../images/comida_4.svg";
 
 import { ContainerSection, ContainerArticle, ContainerCards } from "./styles";
 
-function TwoSection(props) {
+function RecipesSection(props) {
   return (
     <ContainerSection name="recipes">
       <h1>Our Best Recipes</h1>
@@ -27,4 +27,4 @@ function TwoSection(props) {
     </ContainerSection>
   );
 }
-export default TwoSection;
+export default RecipesSection;

@@ -1,20 +1,20 @@
 import React from "react";
-import FourSection from "./blog-section/FourSection";
+import BlogSection from "./blog-section/BlogSection";
 import Header from "./home-section/header/Header";
-import FiveSection from "./join-section/SectionFive";
-import TwoSection from "./recipes-section/TwoSection";
-import OneSection from "./home-section/OneSection";
-import ThreeSection from "./services-section/ThreeSection";
+import JoinSection from "./join-section/JoinSection";
+import RecipesSection from "./recipes-section/RecipesSection";
+import HomeSection from "./home-section/HomeSection";
+import ServicesSection from "./services-section/ServicesSection";
 
 function LandingPage() {
   return (
     <>
       <Header />
-      <OneSection />
-      <TwoSection />
-      <ThreeSection />
-      <FourSection />
-      <FiveSection />
+      <HomeSection />
+      <RecipesSection />
+      <ServicesSection />
+      <BlogSection />
+      <JoinSection />
     </>
   );
 }

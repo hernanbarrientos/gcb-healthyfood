@@ -7,7 +7,7 @@ import {
   FooterPage,
 } from "./styles";
 
-function FiveSection(props) {
+function JoinSection(props) {
   return (
     <>
       <ContainerJoin name="join">
@@ -31,4 +31,4 @@ function FiveSection(props) {
     </>
   );
 }
-export default FiveSection;
+export default JoinSection;
