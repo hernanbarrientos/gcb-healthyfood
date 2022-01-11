@@ -1,5 +1,5 @@
 # Descrição
-Nesta aplicação foi criada a tela de cadastro baseada na tela inicial, o cadastro receber os dados abaixo: 
+Nesta aplicação foi reproduzida a Landingpage e criada a tela de cadastro baseada na tela inicial, o cadastro recebe os dados abaixo: 
 
    Nome
    
