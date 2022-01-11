@@ -1,5 +1,5 @@
 # Descrição
-Nesta aplicação foi criada a tela de cadastro baseada na tela inicial, o cadastro receber os dados abaixo: 
+Nesta aplicação foi reproduzida a Landingpage e criada a tela de cadastro baseada na tela inicial, o cadastro recebe os dados abaixo: 
 
    Nome
    
@@ -23,8 +23,6 @@ O projeto foi desenvolvido usando as seguintes tecnologias:
 -   [React.js](https://pt-br.reactjs.org/docs/getting-started.html)
 -   [Styled-Components](https://styled-components.com/docs)
 -   [React-Hooks](https://pt-br.reactjs.org/docs/hooks-custom.html)
--   [useState](https://pt-br.reactjs.org/docs/hooks-state.html)
--   [useEffect](https://pt-br.reactjs.org/docs/hooks-effect.html)
 -   [Axios](https://axios-http.com/ptbr/docs/intro)
 -   [JS-Cookie](https://github.com/js-cookie/js-cookie)
 -   [SweetAlert](https://sweetalert2.github.io/)
@@ -38,6 +36,6 @@ Executar o comando npm install, depois npm start<br>
 Abrir no endereço http://localhost:3000<br><br>
 Hospedado em
 
--   [Helthyfood](http://hernan-barrientos-helthyfood.surge.sh)
+-   [Healthyfood](http://hernan-barrientos-helthyfood.surge.sh)
 
 
