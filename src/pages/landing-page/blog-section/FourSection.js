@@ -1,34 +1,34 @@
 import { React, useRef } from "react";
-import CardsBlog from "../cardsblog/CardsBlog";
-import user01 from "../../images/user01.jpg";
-import user02 from "../../images/user02.jpg";
-import user03 from "../../images/user03.jpg";
-import user04 from "../../images/user04.jpg";
-import imgblog01 from "../../images/blog_image_1.svg";
-import imgblog02 from "../../images/bloco_image_2.svg";
-import imgblog03 from "../../images/bloco_image_3.svg";
-import imgblog04 from "../../images/bloco_image_4.svg";
-import arrow from "../../images/arrow.png";
-import arrowLeft from "../../images/arrowLeft.png"
+import CardsBlog from "../../../Components/cardsblog/CardsBlog";
+import user01 from "../../../images/user01.jpg";
+import user02 from "../../../images/user02.jpg";
+import user03 from "../../../images/user03.jpg";
+import user04 from "../../../images/user04.jpg";
+import imgblog01 from "../../../images/blog_image_1.svg";
+import imgblog02 from "../../../images/bloco_image_2.svg";
+import imgblog03 from "../../../images/bloco_image_3.svg";
+import imgblog04 from "../../../images/bloco_image_4.svg";
+import arrow from "../../../images/arrow.png";
+import arrowLeft from "../../../images/arrowLeft.png";
 import {
   ContainerBlog,
   CardContainers,
   TextDescription,
+  ContainerButtonScroll,
   ArrowRight,
+  ArrowLeft,
   ButtonRight,
-  ButtonLeft
+  ButtonLeft,
 } from "./styles";
 
 function FourSection() {
   const carousel = useRef(null);
 
   const handleLeftClick = () => {
-    
     carousel.current.scrollLeft += 250;
   };
 
   const handleRightClick = () => {
-    
     carousel.current.scrollLeft -= 250;
   };
 
@@ -40,13 +40,20 @@ function FourSection() {
         and Consonantia, there live the blind texts
       </TextDescription>
 
+      <ContainerButtonScroll>
+        <div>
+          <ButtonLeft onClick={handleRightClick}>
+            <ArrowLeft src={arrowLeft} alt="scroll Left" />
+          </ButtonLeft>
+        </div>
+
+        <div>
+          <ButtonRight onClick={handleLeftClick}>
+            <ArrowRight src={arrow} alt="scroll Rigth" />
+          </ButtonRight>
+        </div>
+      </ContainerButtonScroll>
       <CardContainers ref={carousel}>
-        <ButtonRight onClick={handleLeftClick}>
-          <ArrowRight src={arrow} alt="scroll Rigth" />
-        </ButtonRight>
-        <ButtonLeft onClick={handleRightClick}>
-          <ArrowRight src={arrowLeft} alt="scroll Left" />
-        </ButtonLeft>
         <CardsBlog
           blogImage={imgblog01}
           title="Quick-start guide to nuts and seeds"

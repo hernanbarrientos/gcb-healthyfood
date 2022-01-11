@@ -8,7 +8,6 @@ export const Card = styled.div`
   text-align: left;
   border-radius: 12px;
   box-shadow: 2px 2px 8px #f1f1f1;
-  
 `;
 
 export const Image = styled.img`
@@ -21,7 +20,6 @@ export const CardText = styled.div`
   text-align: left;
   width: 100%;
   letter-spacing: 0.1rem;
-  
 `;
 
 export const TextBlog = styled.h2`
@@ -44,7 +42,7 @@ export const FooterContainer = styled.section`
     font-family: "muli";
     font-weight: 600;
     font-size: 01rem;
-    color: var(--texts)
+    color: var(--texts);
   }
 `;
 

@@ -1,9 +1,9 @@
 import React from "react";
-import CardsRecipes from "../cardsRecipes/CardsRecipes";
-import comida1 from "../../images/comida_1.svg";
-import comida2 from "../../images/comida_2.svg";
-import comida3 from "../../images/comida_3.svg";
-import comida4 from "../../images/comida_4.svg";
+import CardsRecipes from "../../../Components/cards-recipes/CardsRecipes";
+import comida1 from "../../../images/comida_1.svg";
+import comida2 from "../../../images/comida_2.svg";
+import comida3 from "../../../images/comida_3.svg";
+import comida4 from "../../../images/comida_4.svg";
 
 import { ContainerSection, ContainerArticle, ContainerCards } from "./styles";
 
